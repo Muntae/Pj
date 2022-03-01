@@ -1,0 +1,12 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<a href="/home/create">등록</a> <br>
+
+<% unless @posts.nil? %>
+    <% @posts.each do |p| %>
+        <%= p.title %>
+        <%= p.content %>
+    <% end %>
+<% else %>
+    내용이 없습니다.
+<% end %>
