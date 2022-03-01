@@ -4,8 +4,9 @@
 
 <% unless @posts.nil? %>
     <% @posts.each do |p| %>
-        <%= p.title %>
-        <%= p.content %>
+        제목 : <%= p.title %> <br>
+        내용 : <%= p.content %> <br>
+        <a href="/home/modify">수정</a>
     <% end %>
 <% else %>
     내용이 없습니다.
